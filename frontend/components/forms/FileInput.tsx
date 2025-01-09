@@ -96,7 +96,7 @@ const FileInput: React.FC<FileInputProps> = ({
   const handleFileChange = async (event: ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files) {
-      console.log(files, "shaddu");
+      console.log(files, "file");
       const fileArray = Array.from(files);
 
       setSelectedFiles(fileArray);

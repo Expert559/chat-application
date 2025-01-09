@@ -20,20 +20,6 @@ export default async function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // console.log(props)
-  // console.log(cookies().get("Authorization"), 'user auth hun mein ')
-
-  // const res = await fetch("http://127.0.0.1:4000/api/user/check-auth", {
-  //   headers: { token: cookies().get("Authorization")?.value },
-  // });
-
-  // const isAuthenticated = res.ok;
-
-  // if (isAuthenticated) {
-  //   // redirect("/chat")
-  // } else {
-  //   // redirect("/auht/login")
-  // }
 
   return (
     <ThemeProvider>

@@ -97,7 +97,7 @@ class ChatApp {
       // * joining the user to the chat room, when we click any of the chat on the client-side
 
       socket.on("joinChatRoom", (chatRoomData) => {
-        console.log("chat joined bhaiya");
+        console.log("chat joined");
         // Using Chat-Id as room's unique-name
         const chatId = chatRoomData?._id || "";
 
@@ -120,7 +120,7 @@ class ChatApp {
         // * updating client-side on joining the new-user to the socket-connection
         this.io.emit("onlineUsers", this.connectedUsers); // LISTEN EVENT ON CLIENT-SIDE
 
-        console.log(this.connectedUsers, " connected users hen ye");
+        console.log(this.connectedUsers, " connected users");
       });
 
       socket.on("newMessage", ({ message, chat }) => {

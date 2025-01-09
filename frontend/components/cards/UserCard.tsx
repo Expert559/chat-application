@@ -23,7 +23,7 @@ const UserCard: React.FC<UserCardProps> = ({
   isOnline,
   children,
 }) => {
-  console.log(user, "USER HE YE");
+  console.log(user, "USER");
   return (
     <div
       className={`flex justify-between px-4 m-0.5 cursor-pointer py-2 hover:bg-opacity-70 dark:hover:bg-opacity-70 active:bg-gray-200 dark:active:bg-gray-200 ring-black rounded-md transition-all border-t ${className}`}

@@ -9,7 +9,7 @@ const Media = require("../models/media.model");
 
 // Create a new message
 router.post("/", authenticateToken, upload.single("file"), async (req, res) => {
-  console.log(req.file, " shaddu");
+  console.log(req.file, " file");
 
   try {
     const { chatId, content } = req.body;
@@ -46,7 +46,7 @@ router.post("/", authenticateToken, upload.single("file"), async (req, res) => {
 router.get("/:chatId", authenticateToken, async (req, res) => {
   try {
     const chatId = req.params.chatId;
-    console.log(chatId, "chat aaaaaaaagiaaieutehus");
+    console.log(chatId, "chat");
 
     // Fetch all messages associated with the provided chat ID
     const messages = await Message.find({ chat: chatId })
